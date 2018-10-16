@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:background="#33000000"
+        android:text="        Enter Path to Folder/File:"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnSet"
+        android:layout_alignBottom="@+id/btnSet"
+        android:layout_marginLeft="165dp"
+        android:layout_marginRight="5dp"
+        android:background="#33000000"
+        android:enabled="false"
+        android:text="Done"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="0.15"
+        android:src="@drawable/btimg" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoFilename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:text="AutoCompleteTextView"
+        android:textSize="20dp" >
+
+        <requestFocus />
+    </AutoCompleteTextView>
+
+    <Button
+        android:id="@+id/btnSet"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/autoFilename"
+        android:layout_below="@+id/autoFilename"
+        android:layout_marginTop="70dp"
+        android:background="#33000000"
+        android:text="Set Path"
+        android:textSize="20dp" />
+
+</RelativeLayout>

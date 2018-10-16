@@ -1,0 +1,43 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bluetoothbeamer.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    
+    <Button
+        android:id="@+id/scan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/scan" 
+        android:layout_marginTop="360dp"
+			android:background="#ee000000"
+           android:textColor="#ffffff"
+           android:textSize="20dp"
+                            
+       />
+    
+    <Button
+        android:id="@+id/settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="@string/setting" 
+        android:background="#ee000000"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        
+        />
+    
+
+     <ImageView
+         android:id="@+id/imageView1"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:alpha="0.15"
+         android:src="@drawable/btimg" />
+ 
+ </FrameLayout>
+
